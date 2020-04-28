@@ -1,0 +1,264 @@
+@font-face {
+    font-family: Sahel;
+    src: url('../font/Sahel.eot') format('embedded-opentype'),
+         url('../font/Sahel.woff2') format('woff2'),
+         url('../font/Sahel.woff') format('woff'),
+         url('../font/Sahel.ttf') format('truetype');
+    font-weight: normal;
+}
+  
+@font-face {
+    font-family: Sahel;
+    src: url('../font/Sahel-Bold.eot') format('embedded-opentype'),
+         url('../font/Sahel-Bold.woff2') format('woff2'),
+         url('../font/Sahel-Bold.woff') format('woff'),
+         url('../font/Sahel-Bold-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+  
+@font-face {
+    font-family: Sahel;
+    src: url('../font/Sahel-Light.eot') format('embedded-opentype'), 
+         url('../font/Sahel-Light.woff2') format('woff2'),
+         url('../font/Sahel-Light.woff') format('woff'),
+         url('../font/Sahel-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+/* Global css */
+.container{
+   width:100%;
+   margin-left: auto;
+   margin-right: auto; 
+}
+
+.container::after{
+    clear:both;
+    content: "";
+    display: table;
+}
+
+.margin-bottom{
+    margin-bottom: 16px;
+}
+
+.margin-top{
+    margin-top: 16px;
+}
+
+.margin-top-bt{
+    margin: 16px 0;
+}
+
+.padding-top{
+    padding-top: 16px;
+}
+
+.padding-bottom {
+    padding-bottom: 16px;
+}
+
+.padding-top-bt{
+    padding: 16px 0;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body{
+    direction: rtl;
+    font-family:'Sahel';
+}
+
+header{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+nav {
+    background-color: rgb(51, 49, 49);
+    color:white;
+}
+
+.hot-subject{
+    width: 100%;
+    background-color: dimgrey;
+}
+
+.main-wrapper{
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 8px;
+}
+
+.first-col {
+    width:100%;
+    background-color: cornflowerblue;
+}
+
+.first-news {
+    width:100%;
+    background-color: rgb(248, 189, 39);
+}
+
+.main-middle-box{
+    width:100%;
+    background-color: darkturquoise;
+}
+
+.second-col{
+    width:100%;
+    background-color: darkmagenta;
+}
+
+.suggest-box {
+    width:100%;
+    background-color: red;
+}
+
+.main-right-col{
+    width:100%;
+    background-color: deeppink;
+}
+
+.first-col-bottom{
+    width:100%;
+    background-color: rgb(138, 101, 132);
+}
+
+.second-col-bottom{
+    width:100%;
+    background-color: rgb(99, 235, 129);
+}
+
+.lastnews{
+    width:100%;
+    background-color: red;;
+}
+
+.news {
+    background-color: red;
+    width:100%;
+}
+
+.pic-box{
+    width:100%;
+    background-color: rgb(207, 206, 204);
+}
+
+.first-pic{
+    width:100%;
+    background-color: sandybrown;
+}
+
+.second-video{
+    width:100%;
+    background-color: rgb(224, 81, 81);
+}
+
+.follow-me{
+    width: 100%;
+    background-color: rgb(162, 177, 80);
+}
+
+footer{
+    width:100%;
+    background-color: black;
+    color:white;
+}
+
+.main-box{
+    width:100%;
+    background-color: rgb(168, 167, 151);
+}
+
+.group-box-pic{
+    width:100%;
+}
+
+@media screen and (min-width:600px){
+    .first-news {
+        width:50%; 
+        float:right; 
+        padding-left: 16px;
+    }
+
+    .main-middle-box{
+        float:left;
+        width:50%;
+    }
+
+    .main-right-col{
+        width:50%;
+        float: right;
+        padding-left:16px;
+    }
+
+    .main-box{
+        width:50%;
+        float:left;
+    }
+
+    .pic-box1{
+        float:right;
+        width:50%;
+    }
+
+    .pic-box2{
+        float:right;
+        width:50%;
+    }
+
+    .pic-box3{
+        float:right;
+        width:50%;
+    }
+
+    .pic-box4{
+        float:right;
+        width:50%;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .first-col {
+        width:70%;
+        padding-left:16px;
+        float:right;
+    }
+
+    .second-col{
+        width:30%;
+        float: left;
+    }
+    
+    .first-col-bottom{
+        width:70%;
+        float:right;
+        padding-left: 16px;
+    }
+    
+    .second-col-bottom{
+        width:30%;
+        float: left;
+    }
+
+    .group-box-pic{
+        width:50%;
+        float:right;
+    }
+
+    .first-pic{
+        width:50%;
+        float:right;
+        padding-left:16px;
+    }
+
+    .second-video{
+        width:50%;
+        float:left;
+    }
+}  
